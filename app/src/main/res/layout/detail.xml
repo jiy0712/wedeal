@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#edffef">
+
+<!--앱 제목-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="114dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/base"
+        android:gravity="center"
+        android:text="위딜\nWeDeal"
+        android:textColor="#111111"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--버튼/검색/약속잡기 백그라운드-->
+    <ImageView
+        android:id="@+id/buttonback"
+        android:layout_width="404dp"
+        android:layout_height="109dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button" />
+    <ImageView
+        android:id="@+id/searchback"
+        android:layout_width="257dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button" />
+    <ImageView
+        android:id="@+id/promiseback"
+        android:layout_width="226dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button" />
+
+<!--상품 이미지-->
+
+    <!--검색/마이페이지/상품등록/약속잡기 버튼-->
+    <Button
+        android:id="@+id/searchbutton"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/base"
+        android:text="검색"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/homebutton"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/base"
+        android:text="마이페이지"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/registrationbutton"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/base"
+        android:text="상품등록"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/promisebutton"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="153dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/point"
+        android:text="약속잡기"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+<!--상품제목/상품가격/상품글 텍스트-->
+
+    <TextView
+        android:id="@+id/productNameTextView"
+        android:layout_width="202dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/point"
+        android:gravity="center"
+        android:text="상품 1"
+        android:textColor="#111111"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/productPriceTextView"
+        android:layout_width="181dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/detail"
+        android:gravity="center"
+        android:text="원"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productNameTextView" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="255dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/detail"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#111111"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productPriceTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

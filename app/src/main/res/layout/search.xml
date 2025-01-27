@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edffef">
+
+<!--앱 제목-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="114dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/base"
+        android:gravity="center"
+        android:text="위딜\nWeDeal"
+        android:textColor="#111111"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--추천검색어 텍스트-->
+    <TextView
+        android:id="@+id/recommendation"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="276dp"
+        android:fontFamily="@font/base"
+        android:gravity="center"
+        android:text="추천검색어"
+        android:textColor="#111111"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--버튼/검색 백그라운드-->
+    <ImageView
+        android:id="@+id/buttonback"
+        android:layout_width="404dp"
+        android:layout_height="109dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button" />
+    <ImageView
+        android:id="@+id/searchback"
+        android:layout_width="378dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button" />
+
+<!--검색/마이페이지/상품등록/새로고침 버튼-->
+    <Button
+        android:id="@+id/searchbutton"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/base"
+        android:text="검색"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/homebutton"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/base"
+        android:text="마이페이지"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/registrationbutton"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/base"
+        android:text="상품등록"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <ImageButton
+        android:id="@+id/refreshbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="250dp"
+        android:backgroundTint="#edffef"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/refreshicon" />
+
+<!--검색 입력받는-->
+    <EditText
+        android:id="@+id/searchtext"
+        android:layout_width="311dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="192dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--검색 아이콘-->
+    <ImageButton
+        android:id="@+id/searchiconbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#a7ffb0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/searchicon" />
+
+<!--추천키워드 랜덤 5개-->
+    <TextView
+        android:id="@+id/keywordTextView"
+        android:layout_width="346dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="356dp"
+        android:fontFamily="@font/base"
+        android:gravity="center"
+        android:text="추천키워드"
+        android:textColor="#111111"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

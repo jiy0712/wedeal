@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#edffef">
+
+    <!--앱 제목-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="114dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/base"
+        android:gravity="center"
+        android:text="위딜\nWeDeal"
+        android:textColor="#111111"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--버튼/입력 백그라운드-->
+    <ImageView
+        android:id="@+id/buttonback"
+        android:layout_width="404dp"
+        android:layout_height="109dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button" />
+    <ImageView
+        android:id="@+id/searchback"
+        android:layout_width="257dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button" />
+
+    <TextView
+        android:id="@+id/searchResultTextView"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="33dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/base"
+        android:gravity="center"
+        android:text="검색한 것"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 검색 결과 표시 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toTopOf="@id/buttonback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--검색/마이페이지/상품등록 버튼-->
+    <Button
+        android:id="@+id/searchbutton"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/base"
+        android:text="검색"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/homebutton"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/base"
+        android:text="마이페이지"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/registrationbutton"
+        android:layout_width="163dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00ff0000"
+        android:fontFamily="@font/base"
+        android:text="상품등록"
+        android:textColor="#111111"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
